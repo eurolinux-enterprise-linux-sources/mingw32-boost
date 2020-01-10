@@ -9,7 +9,7 @@
 
 Name:           mingw32-%{name1}
 Version:        1.41.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        MinGW Windows port of Boost C++ Libraries
 
 License:        Boost
@@ -275,6 +275,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Fri Feb  4 2011 Andrew Beekhof <abeekhof@redhat.com> - 1.41.0-2
 - Rebuild for new version of mingw32-zlib
   Related: rhbz#658833
